@@ -1,0 +1,29 @@
+{
+  "name": "gcodeeditor",
+  "version": "1.0.0",
+  "author": "eokiryanov",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "build": "webpack --progress -p",
+    "watch": "webpack --progress --watch"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "jquery": "^3.3.1",
+    "less-middleware": "~2.2.1",
+    "morgan": "~1.9.0",
+    "three": "^0.102.1",
+    "three-orbit-controls": "^82.1.0",
+    "threejs-transformcontrols": "^0.83.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

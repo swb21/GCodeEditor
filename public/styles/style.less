@@ -1,0 +1,85 @@
+html {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 32px auto;
+  overflow: hidden;
+  margin: 0;
+  font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.header {
+  width: 100vw;
+  height: 32px;
+  //background: #eee;
+  background: #ddd;
+}
+
+.header__navigation {
+  height: inherit;
+}
+
+
+.navigation {
+  display: inline-flex;
+}
+
+.navigation__element {
+  height: inherit;
+  margin: 0 20px 0 10px;
+}
+
+
+.dropdown-list {
+  color: #737373;
+}
+
+.dropdown-list__header {
+  display: inline-block;
+  line-height: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-list__options {
+  position: fixed;
+  width: 180px;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  display: none;
+  overflow-x: hidden;
+  background: #ddd;
+}
+
+.dropdown-list__options_opened {
+  display: flex;
+}
+
+.dropdown-list__option {
+  line-height: 2.5rem;
+  padding-left: 10px;
+  color: #5a5a5a;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #bfbfbf;
+  }
+}
+
+
+.project-canvas {
+  height: 100%;
+}
